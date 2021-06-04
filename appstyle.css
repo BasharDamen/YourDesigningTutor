@@ -32,11 +32,15 @@ section {
 .articles p{
 margin-left: 10px;
 margin-bottom: 20px;
+
 }
 
 footer{
   border-top: 10px solid rgb(70, 70, 70);
   background-color: rgb(218, 218, 218);
+  align-items: center;
+  display: inline-table;
+  
 }
 
 .au {
@@ -53,4 +57,9 @@ footer{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
+    
+}
+
+.cucu{
+  list-style: none;
 }

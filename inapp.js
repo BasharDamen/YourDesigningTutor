@@ -22,4 +22,3 @@ document.write('<img src=s7.jpg height=100px width=200px />')
 console.log('Designing' + x )
 
 document.write('<div>' + '<h4> Creativity is nothing but a mind set free<h4>' + '  -Torrie T. Asai' + '</div>')
-
