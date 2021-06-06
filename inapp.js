@@ -5,20 +5,48 @@ var finalName = 'Developer:' + firstName + lastName
 
 console.log(finalName)
 
-alert("Hello, we are glad to see you")
+
+function welcoming() {
+  alert("Hello, we are glad to see you")
+
+  var UserInput = prompt("How many years of excperience do you have in designing")
 
 
-var UserInput = prompt("rate our website from 1 - 10")
+  if (UserInput <= 2) {
+    alert('you are beginner')
+  }
 
-while(UserInput <1 || UserInput>10 ) {
-UserInput = prompt("rate our website from 1 - 10")
+  else if (UserInput > 2 && UserInput <= 5) {
+    alert('you are intermediate')
+  }
+
+  else if (UserInput > 5) {
+    alert("you are profissional")
+  }
+  else {
+    UserInput = prompt('only use numbers')
+  }
+
 }
 
-var i = prompt ("how many years of excperience to you have in designing?")
-for (var x = 0 ; x < i ; x++){ 
-console.log('Designing' + x )
-document.write('<img src=s7.jpg height=100px width=200px />')
-}
-console.log('Designing' + x )
+function imgprinting() {
 
-document.write('<div>' + '<h4> Creativity is nothing but a mind set free<h4>' + '  -Torrie T. Asai' + '</div>')
+  var programs = prompt('how many photo of ps do you want to see')
+
+  while (programs > 0) {
+
+    document.write('<img src= "Adobe-Photoshop-2020-Logos-1280x720.jpg" width=150px: height=100px/>')
+    programs--
+
+
+
+  }
+
+
+}
+welcoming();
+imgprinting();
+
+
+
+
