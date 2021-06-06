@@ -30,16 +30,15 @@ function welcoming() {
 }
 
 function imgprinting() {
+  var UserInput2 = prompt('how many photo of ps do you want to see')
 
-  var programs = prompt('how many photo of ps do you want to see')
+  while (UserInput2 < 0) {
 
-  while (programs > 0) {
+    UserInput2 = prompt('how many photo of ps do you want to see')
 
-    document.write('<img src= "Adobe-Photoshop-2020-Logos-1280x720.jpg" width=150px: height=100px/>')
-    programs--
-
-
-
+  }
+  for (i = 0; i < UserInput2; i++) {
+    document.write('<img src="Adobe-Photoshop-2020-Logos-1280x720.jpg" width= 150px: height=100px/>' + UserInput2)
   }
 
 
